@@ -30,7 +30,7 @@ export default function Showroom({ lang }: { lang: 'es' | 'en' }) {
                         >
                             <div className="aspect-video relative bg-black">
                                 <iframe
-                                    src={`https://www.youtube.com/embed/${channel.videoId}?autoplay=0&controls=0&modestbranding=1&rel=0`}
+                                    src={`https://www.youtube.com/embed/${channel.videoId}?autoplay=1&mute=1&controls=0&modestbranding=1&rel=0&loop=1&playlist=${channel.videoId}&origin=${typeof window !== 'undefined' ? window.location.origin : ''}`}
                                     title={channel.name}
                                     className="w-full h-full absolute inset-0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
