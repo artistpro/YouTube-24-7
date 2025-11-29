@@ -29,5 +29,10 @@ export const channels = [
         name: "Libros Pro",
         url: "https://youtube.com/live/DPQS5z_mfZg?feature=share",
         videoId: "DPQS5z_mfZg"
+    },
+    {
+        name: "NovaSolfeggio",
+        url: "https://youtube.com/live/7b4n6j1b_QE?feature=share",
+        videoId: "7b4n6j1b_QE"
     }
 ];

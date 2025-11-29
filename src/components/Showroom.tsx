@@ -26,7 +26,8 @@ export default function Showroom({ lang }: { lang: 'es' | 'en' }) {
                             whileInView={{ opacity: 1, scale: 1 }}
                             viewport={{ once: true }}
                             transition={{ delay: index * 0.1 }}
-                            className="glass-panel overflow-hidden group hover:border-red-500/30 transition-colors"
+                            className={`glass-panel overflow-hidden group hover:border-red-500/30 transition-colors ${index === channels.length - 1 && channels.length % 3 === 1 ? 'lg:col-start-2' : ''
+                                }`}
                         >
                             <div className="aspect-video relative bg-black">
                                 <iframe
